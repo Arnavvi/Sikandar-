@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head><style>
+      body{background-color:#95e0ffc5}hr{background-color:blue}
+      {
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+</style>
+     
+    <meta charset="utf-8">
+    <meta name="description" content="">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Acme Web Deisgn | About</title>
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">•`SIKANDAR </span>KHAN -</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>ABOUT MYSELF -</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <div class="cyan"><h1 class="page-title">About Me -</h1></div>
+         <div class="dark"> <p>
+            
+Teaching Style:<br>
+Engaging, interactive, and student-centered. I believe in making maths fun, accessible, and relevant to real-life scenarios. Think games, puzzles, and hands-on activities that foster critical thinking and problem-solving skills!<br>
+
+Specialties:<br> Algebra, Geometry, Calculus, and Statistics. I'm passionate about helping students overcome maths anxiety and build confidence in their problem-solving abilities.<br>
+
+Personality:<br> Patient, empathetic, and encouraging. I celebrate mistakes as opportunities for growth and learning. My mantra? *Maths is a journey* not a destination!"<br>
+
+Inspirational Quote: <br>`Maths is the language with which God has written the universe." - Galileo Galilei<br>
+          </p></div>
+          <p class="dark">
+As a maths teacher, I strive to create an engaging and interactive learning environment that makes maths fun, accessible, and relevant to real-life scenarios. My teaching style is student-centered, focusing on building confidence and problem-solving skills through hands-on activities, games, and puzzles. I believe in celebrating mistakes as opportunities for growth and learning, and my approach is patient, empathetic, and encouraging. My goal is to help students overcome maths anxiety and develop a deep understanding of mathematical concepts, from algebra and geometry to calculus and statistics. By exploring the fascinating world of maths together, I aim to inspire a love of learning and a appreciation for the beauty and importance of maths in our lives.
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>MY HOBBIES</h3>
+            <p>As a maths teacher, my hobbies might include activities that complement my analytical mind and passion for problem-solving. My hobbies might include puzzles, brain teasers, and strategy games like chess or Sudoku. I might also be fascinated by coding and programming, using my logical thinking to create innovative solutions. Additionally, my interests might include architecture, design, or engineering, exploring how mathematical concepts are applied in real-world contexts. </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <hr><hr>
+  </body>
+</html>
